@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>ItemsWithAttributes</RootNamespace>
     <StartupObject>ItemsWithAttributes.Form1</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>

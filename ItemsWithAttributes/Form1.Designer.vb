@@ -25,11 +25,13 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblSaveMsg = New System.Windows.Forms.Label()
         Me.lblItemMsg = New System.Windows.Forms.Label()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.btnSaveItem = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtItemID = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnAttrib8 = New System.Windows.Forms.Button()
         Me.btnAttrib7 = New System.Windows.Forms.Button()
@@ -40,21 +42,23 @@ Partial Class Form1
         Me.btnAttrib2 = New System.Windows.Forms.Button()
         Me.btnAttrib1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.btnImportAttrib = New System.Windows.Forms.Button()
+        Me.btnViewSavedItems = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblImportMsg = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lblSaveMsg)
         Me.Panel1.Controls.Add(Me.lblItemMsg)
-        Me.Panel1.Controls.Add(Me.Button11)
+        Me.Panel1.Controls.Add(Me.btnSaveItem)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.txtItemID)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -83,14 +87,14 @@ Partial Class Form1
         Me.lblItemMsg.TabIndex = 8
         Me.lblItemMsg.Text = " "
         '
-        'Button11
+        'btnSaveItem
         '
-        Me.Button11.Location = New System.Drawing.Point(651, 83)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(122, 25)
-        Me.Button11.TabIndex = 7
-        Me.Button11.Text = "Save"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnSaveItem.Location = New System.Drawing.Point(651, 83)
+        Me.btnSaveItem.Name = "btnSaveItem"
+        Me.btnSaveItem.Size = New System.Drawing.Size(122, 25)
+        Me.btnSaveItem.TabIndex = 7
+        Me.btnSaveItem.Text = "Save"
+        Me.btnSaveItem.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -122,6 +126,7 @@ Partial Class Form1
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.btnAttrib8)
         Me.Panel2.Controls.Add(Me.btnAttrib7)
@@ -136,6 +141,24 @@ Partial Class Form1
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(830, 183)
         Me.Panel2.TabIndex = 1
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(35, 6)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(137, 15)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Selected attribute's color"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Orange
+        Me.Button1.Location = New System.Drawing.Point(7, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(27, 21)
+        Me.Button1.TabIndex = 12
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -236,32 +259,32 @@ Partial Class Form1
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "ATTRIBUTES"
         '
-        'Button8
+        'btnImportAttrib
         '
-        Me.Button8.Location = New System.Drawing.Point(420, 464)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(122, 29)
-        Me.Button8.TabIndex = 2
-        Me.Button8.Text = "Import Attributes"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnImportAttrib.Location = New System.Drawing.Point(420, 464)
+        Me.btnImportAttrib.Name = "btnImportAttrib"
+        Me.btnImportAttrib.Size = New System.Drawing.Size(122, 29)
+        Me.btnImportAttrib.TabIndex = 2
+        Me.btnImportAttrib.Text = "Import Attributes"
+        Me.btnImportAttrib.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btnViewSavedItems
         '
-        Me.Button9.Location = New System.Drawing.Point(555, 464)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(157, 29)
-        Me.Button9.TabIndex = 3
-        Me.Button9.Text = "View/Hide Saved Item IDs"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnViewSavedItems.Location = New System.Drawing.Point(555, 464)
+        Me.btnViewSavedItems.Name = "btnViewSavedItems"
+        Me.btnViewSavedItems.Size = New System.Drawing.Size(157, 29)
+        Me.btnViewSavedItems.TabIndex = 3
+        Me.btnViewSavedItems.Text = "View/Hide Saved Item IDs"
+        Me.btnViewSavedItems.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btnExit
         '
-        Me.Button10.Location = New System.Drawing.Point(724, 464)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(122, 29)
-        Me.Button10.TabIndex = 4
-        Me.Button10.Text = "Exit"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(724, 464)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(122, 29)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -294,6 +317,15 @@ Partial Class Form1
         Me.ListBox1.TabIndex = 11
         Me.ListBox1.Visible = False
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Location = New System.Drawing.Point(644, 8)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(181, 28)
+        Me.Panel3.TabIndex = 14
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -302,9 +334,9 @@ Partial Class Form1
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.lblImportMsg)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnViewSavedItems)
+        Me.Controls.Add(Me.btnImportAttrib)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form1"
@@ -313,6 +345,8 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -350,13 +384,16 @@ Partial Class Form1
     Friend WithEvents btnAttrib2 As Button
     Friend WithEvents btnAttrib1 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents btnSaveItem As Button
+    Friend WithEvents btnImportAttrib As Button
+    Friend WithEvents btnViewSavedItems As Button
+    Friend WithEvents btnExit As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents lblSaveMsg As Label
     Friend WithEvents lblItemMsg As Label
     Friend WithEvents lblImportMsg As Label
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Panel3 As Panel
 End Class
